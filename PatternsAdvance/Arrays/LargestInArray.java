@@ -3,39 +3,39 @@ package PatternsAdvance.Arrays;
 import java.util.*;
 
 public class LargestInArray {
-    
 
-    public static void findLargestInArray(int array[]) {
+    public static void findLargestAndSmallestInArray(int array[]) {
 
         int largest = Integer.MIN_VALUE;
-        
-        
+        int smallest = Integer.MAX_VALUE;
+
         for (int i = 0; i < array.length; i++) {
 
             int item = array[i];
-            
-            if (largest < array[i+1]) {
-                
-                largest = array[i+1];
+
+            if (largest < item) {
+
+                largest = item;
+
+            }
+
+            if (smallest > item) {
+
+                smallest = item;
 
             }
 
         }
 
-        System.out.println(largest + largest);
-        
+        System.out.println("largest: " + largest + ", smallest: " + smallest);
 
     }
-    
-
 
     public static void main(String[] args) {
-        
-        int arr[] = {20,30,40,50,60,70};
 
-        findLargestInArray(arr);
+        int arr[] = { 1000, 20, 30, -1, 40, 2000, 50, 60, 70, 5 };
 
-        
+        findLargestAndSmallestInArray(arr);
 
     }
 
