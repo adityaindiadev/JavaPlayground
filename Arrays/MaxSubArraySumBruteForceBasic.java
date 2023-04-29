@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.*;
 
-public class MaxSubArraySum {
+public class MaxSubArraySumBruteForceBasic {
 
     public static void printMaxSubArraySum(int array[]) {
 
