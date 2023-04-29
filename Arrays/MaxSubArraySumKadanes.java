@@ -14,10 +14,11 @@ public class MaxSubArraySumKadanes {
 
             }
 
-            if (currentSumOfSubArray > max) {
-                max = currentSumOfSubArray;
-            }
+            // if (currentSumOfSubArray > max) {
+            //     max = currentSumOfSubArray;
+            // }
 
+            max = Math.max(max, currentSumOfSubArray);
         }
         System.out.println();
 
