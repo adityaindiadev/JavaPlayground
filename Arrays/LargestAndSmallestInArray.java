@@ -1,8 +1,8 @@
-package PatternsAdvance.Arrays;
+package Arrays;
 
 import java.util.*;
 
-public class LargestInArray {
+public class LargestAndSmallestInArray {
 
     public static void findLargestAndSmallestInArray(int array[]) {
 

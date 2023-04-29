@@ -1,28 +1,31 @@
-package PatternsAdvance.Arrays;
+package Arrays;
 
 public class SubArrays {
     
 
     public static void printSubArrays(int array[]) {
         
-        for (int i = 0; i < array.length; i++) {
-            
-           for (int j = i+1; j < array.length; j++) {
-            
-                System.out.print(" [ " + array[i] + ", " );
+        for (int first = 0; first < array.length; first++) {
 
-                for (int k = j; k < j+1; k++) {
-                    
-                    System.out.print( array[k]  + ", ");
+            for (int second = first; second < array.length; second++) {
+                
+                System.out.print("[");
 
+                for (int third = first; third <= second; third++) {
+
+                    System.out.print(array[third]);
+
+                    if (third != second) {
+                        System.out.print(", ");
+                    }
+            
                 }
 
-                System.out.print("] " );
-
-           }
-
-           System.out.println();
-
+                System.out.print("]  ");
+            
+            }
+            System.out.println();
+            
         }
 
       

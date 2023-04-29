@@ -1,4 +1,4 @@
-package PatternsAdvance.Arrays;
+package Arrays;
 
 public class BinarySearch {
 

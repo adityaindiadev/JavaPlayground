@@ -1,4 +1,4 @@
-package PatternsAdvance.Arrays;
+package Arrays;
 
 public class LinearSearch {
 
@@ -28,7 +28,7 @@ public class LinearSearch {
         
         int arr[] = {20,30,40,50,60,70};
 
-        findItemUsingLinearSearch(arr, 33);
+        findItemUsingLinearSearch(arr, 20);
 
         
 
