@@ -28,7 +28,7 @@ public class BubbleSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
 
-                    System.out.println("swap: " + swap);
+                    // System.out.println("swap: " + swap);
 
                 }
 
@@ -43,7 +43,7 @@ public class BubbleSort {
 
         }
 
-        // System.out.println("Total Swaps: " + swap + "\nTotal Turns: " + totalLoopTurns);
+        System.out.println("Total Swaps: " + swap + "\nTotal Turns: " + totalLoopTurns);
 
     }
 
