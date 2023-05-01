@@ -29,15 +29,15 @@ public class CountingSort {
         for (int i = 0; i < countingArray.length; i++) {
 
             // System.out.print(countingArray[i]);
-            
+
             // System.out.print("countingArray[i]: ");
             while (countingArray[i] != 0) {
 
                 // System.out.print(countingArray[i]);
-                
+
                 array[j] = i;
                 j++;
-                countingArray[i] = countingArray[i]-1;
+                countingArray[i] = countingArray[i] - 1;
 
             }
 
