@@ -58,7 +58,7 @@ public class BubbleSort {
 
         int array[] = { 55, 45, 787, 365, 858, 8, 1 };
         sort(array);
-        // printArray(array);
+        printArray(array);
 
     }
 }
