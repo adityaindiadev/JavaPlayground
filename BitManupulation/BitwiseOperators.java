@@ -2,12 +2,18 @@ package BitManupulation;
 
 public class BitwiseOperators {
 
-    static void printBinary(Integer[] binary, Integer id) {
+    static StringBuilder printBinary(Integer[] binary, Integer id) {
         // Iteration over array
-        for (Integer i = id - 1; i >= 0; i--)
+
+        StringBuilder binaryNum = new StringBuilder("");
+        for (int i = id - 1; i >= 0; i--){
             System.out.print(binary[i] + "");
+            
+            binaryNum.append(binary[i].toString());
+        }
 
         System.out.println();
+        return binaryNum;
     }
 
     // Function converting decimal to binary
@@ -38,6 +44,8 @@ public class BitwiseOperators {
         System.out.println(num1 + " OR " + num2 + ": " + (num1 | num2));
         System.out.println(num1 + " XOR " + num2 + ": " + (num1 ^ num2));
         System.out.println(num1 + " 1's Compliment: " + (~num1));
+        System.out.println(num1 + " Left Shif << " + (num1 << 2));
+        System.out.println(num1 + " Left Shif >> " + (num1 >> 2));
         
 
     }
