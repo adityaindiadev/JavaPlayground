@@ -44,8 +44,8 @@ public class BitwiseOperators {
         System.out.println(num1 + " OR " + num2 + ": " + (num1 | num2));
         System.out.println(num1 + " XOR " + num2 + ": " + (num1 ^ num2));
         System.out.println(num1 + " 1's Compliment: " + (~num1));
-        System.out.println(num1 + " Left Shif << " + (num1 << 2));
-        System.out.println(num1 + " Left Shif >> " + (num1 >> 2));
+        System.out.println(num1 + " Left Shift << "  + (num1 << 2));
+        System.out.println(num2 + " Left Shift >> " + (num2 >> 2));
         
 
     }
