@@ -23,6 +23,15 @@ public class IthBitManipulation {
         Integer bitmask = 1;
        
         System.out.println((num & (~(bitmask << i))));
+        // return (num & (~(bitmask << i)));
+
+    }
+    public static Integer getClearIthBit(Integer num, Integer i) {
+
+        Integer bitmask = 1;
+       
+        
+        return (num & (~(bitmask << i)));
 
     }
 
@@ -33,7 +42,9 @@ public class IthBitManipulation {
         } else {
             clearIthBit(num, i);
         }
+        Integer n =  getClearIthBit(num, i);
 
+        System.out.println("with new algo: " + ( n | (updateNum<<i)));
     }
 
     public static void main(String[] args) {
@@ -43,7 +54,7 @@ public class IthBitManipulation {
         getIthBit(num, i);
         setIthBit(num, 1);
         clearIthBit(num, 0);
-        updateIthBit(num, i, 0);
+        updateIthBit(num, i, 1);
 
     }
 }
