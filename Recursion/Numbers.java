@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DecreasingNum {
+public class Numbers {
     
     public static void printDecreasingNum(int num) {
         
@@ -16,20 +16,20 @@ public class DecreasingNum {
     
     public static void printIncreasingNum(int num) {
         
-        if (num == 0) {
+        if (num == 1) {
+            System.out.print(num + " ");
             return;
         }
 
+        printIncreasingNum(num-1);
         System.out.print(num + " ");
-
-        printDecreasingNum(num-1);
 
     }
 
 
     public static void main(String[] args) {
         
-        printDecreasingNum(5);
+        printIncreasingNum(5);
 
     }
 }
