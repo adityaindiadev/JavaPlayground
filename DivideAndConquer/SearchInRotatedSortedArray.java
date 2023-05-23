@@ -73,9 +73,9 @@ public class SearchInRotatedSortedArray {
 
     public static void main(String[] args) {
 
-        int arr[] = { 4, 5, 6, 7, 0, 1, 2 };
+        int arr[] = { 121, 123, 124, 126, 129, 132, 134, 135, 137, 139, 141, 142, 144, 146, 147, 148, 149, 150, 152, 154, 155, 157, 159, 161, 163, 166, 169, 32, 36, 39, 42, 47, 51, 54, 58, 63, 68, 73, 78, 83, 88, 93, 97, 100, 104, 107, 111, 114, 116, 118 };
         printArr(arr);
-        System.out.println(search(arr, 0, arr.length - 1, 6));
+        System.out.println(search(arr, 0, arr.length - 1, 118));
 
     }
 
